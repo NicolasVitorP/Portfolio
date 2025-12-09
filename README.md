@@ -6,6 +6,7 @@
 ![Vite](https://img.shields.io/badge/Vite-5.0.8-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind-3.4.0-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 ![Ant Design](https://img.shields.io/badge/Ant_Design-5.12.0-0170FE?style=for-the-badge&logo=antdesign&logoColor=white)
+![AI-Powered](https://img.shields.io/badge/AI--Powered-Antigravity-FF6B6B?style=for-the-badge&logo=google&logoColor=white)
 
 **Portfólio de alta performance focado em UX/UI, acessibilidade e código limpo**
 
@@ -343,6 +344,21 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 ---
 
+## 🤖 Desenvolvimento Moderno com IA
+
+Este projeto foi desenvolvido utilizando **Antigravity by Google DeepMind**, demonstrando proficiência no uso de ferramentas de IA modernas para desenvolvimento front-end de alta qualidade.
+
+### Por que isso é um diferencial?
+
+- 🚀 **Produtividade Acelerada**: Desenvolvimento ágil sem comprometer qualidade
+- 🎯 **Melhores Práticas**: Código seguindo padrões da indústria desde o início
+- 🔄 **Aprendizado Contínuo**: Estudo e compreensão profunda de cada implementação
+- 🧑‍💻 **Futuro da Engenharia**: Alinhamento com as práticas modernas de desenvolvimento
+
+> 💼 **Nota Profissional**: O uso de ferramentas de IA para desenvolvimento é uma habilidade valorizada na indústria tech moderna. Grandes empresas como Google, Microsoft e Meta incentivam seus engenheiros a utilizarem assistentes de IA para aumentar produtividade e qualidade de código.
+
+---
+
 ## 🙏 Agradecimentos
 
 - [React](https://react.dev/) - Biblioteca UI
@@ -351,6 +367,7 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 - [Ant Design](https://ant.design/) - Componentes UI
 - [Framer Motion](https://www.framer.com/motion/) - Animações
 - [Skill Icons](https://skillicons.dev/) - Ícones de tecnologias
+- [Antigravity](https://deepmind.google/technologies/gemini/) - AI-Powered Development
 
 ---
 
