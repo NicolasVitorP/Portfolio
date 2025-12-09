@@ -85,7 +85,7 @@ export const portfolioData = {
       featured: false
     },
     {
-      title: "Portfólio de Alta Performance",
+      title: "Componentização com React",
       description: "Aplicação React otimizada para performance e SEO. Utiliza Vite para build otimizado, lazy loading e foco rigoroso nas métricas de Core Web Vitals.",
       technologies: ["React", "Vite", "CSS3", "Performance", "SEO"],
       repoLink: "https://github.com/NicolasVitorP/vitejs-vite-ejwaxlas",
