@@ -13,8 +13,12 @@ const Skills = () => {
                         key={index}
                         className="group relative bg-[#121212] border border-white/5 rounded-xl p-6 flex flex-col items-center justify-center gap-4 transition-all hover:-translate-y-2 hover:border-primary/30 hover:shadow-[0_0_20px_rgba(25,118,210,0.15)]"
                     >
-                        <div className="text-4xl transition-transform group-hover:scale-110" style={{ color: skill.color }}>
-                            <skill.icon />
+                        <div className="text-4xl transition-transform group-hover:scale-110">
+                            <img
+                                src={`https://skillicons.dev/icons?i=${skill.iconId}&theme=dark`}
+                                alt={skill.name}
+                                className="w-12 h-12"
+                            />
                         </div>
                         <h3 className="text-gray-300 font-medium group-hover:text-white">{skill.name}</h3>
                     </div>

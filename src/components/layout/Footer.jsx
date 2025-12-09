@@ -17,10 +17,10 @@ const Footer = () => {
                 <p className="text-gray-400 mb-8">{portfolioData.personalInfo.role}</p>
 
                 <div className="flex justify-center gap-6 mb-8">
-                    <a href={portfolioData.personalInfo.github} target="_blank" rel="noopener noreferrer">
+                    <a href={portfolioData.personalInfo.github} target="_blank" rel="noopener noreferrer" aria-label="Visitar GitHub">
                         <Button shape="circle" icon={<GithubOutlined />} size="large" className="bg-white/5 border-white/10 text-white hover:text-primary-light hover:border-primary-light" />
                     </a>
-                    <a href={`mailto:${portfolioData.personalInfo.email}`}>
+                    <a href={`mailto:${portfolioData.personalInfo.email}`} aria-label="Enviar Email">
                         <Button shape="circle" icon={<MailOutlined />} size="large" className="bg-white/5 border-white/10 text-white hover:text-primary-light hover:border-primary-light" />
                     </a>
                 </div>

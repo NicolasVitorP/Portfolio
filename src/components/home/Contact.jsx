@@ -47,15 +47,15 @@ const Contact = () => {
                         requiredMark={false}
                     >
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <Form.Item name="name" label={<span className="text-gray-300">Nome</span>} rules={[{ required: true, message: 'Por favor insira seu nome' }]}>
+                            <Form.Item name="name" label={<span className="text-gray-300">Nome</span>} rules={[{ required: true, message: 'Por favor, informe seu nome.' }]}>
                                 <Input placeholder="Seu nome" className="bg-black/20 border-white/10 text-white placeholder:text-zinc-600 hover:border-primary focus:border-primary h-10" />
                             </Form.Item>
-                            <Form.Item name="email" label={<span className="text-gray-300">Email</span>} rules={[{ type: 'email', required: true, message: 'Por favor insira um email válido' }]}>
+                            <Form.Item name="email" label={<span className="text-gray-300">Email</span>} rules={[{ type: 'email', required: true, message: 'Por favor, insira um email válido (ex: nome@dominio.com).' }]}>
                                 <Input placeholder="seu@email.com" className="bg-black/20 border-white/10 text-white placeholder:text-zinc-600 hover:border-primary focus:border-primary h-10" />
                             </Form.Item>
                         </div>
 
-                        <Form.Item name="message" label={<span className="text-gray-300">Mensagem</span>} rules={[{ required: true, message: 'Por favor insira sua mensagem' }]}>
+                        <Form.Item name="message" label={<span className="text-gray-300">Mensagem</span>} rules={[{ required: true, message: 'Por favor, escreva sua mensagem para nós.' }]}>
                             <TextArea rows={4} placeholder="Olá, gostaria de falar sobre..." className="bg-black/20 border-white/10 text-white placeholder:text-zinc-600 hover:border-primary focus:border-primary resize-none" />
                         </Form.Item>
 

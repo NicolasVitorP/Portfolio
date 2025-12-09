@@ -69,6 +69,7 @@ const Navbar = () => {
                         href="https://github.com/NicolasVitorP"
                         target="_blank"
                         className="bg-primary hover:bg-primary-hover border-none"
+                        aria-label="Visitar perfil no GitHub"
                     >
                         GitHub
                     </Button>
@@ -80,6 +81,7 @@ const Navbar = () => {
                     type="text"
                     icon={<MenuOutlined />}
                     onClick={() => setMobileMenuOpen(true)}
+                    aria-label="Abrir menu de navegação"
                 />
 
                 {/* Mobile Drawer */}

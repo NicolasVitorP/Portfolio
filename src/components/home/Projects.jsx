@@ -14,11 +14,17 @@ const Projects = () => {
                         key={index}
                         className="group bg-[#121212] rounded-xl overflow-hidden border border-white/5 hover:border-primary/50 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 flex flex-col"
                     >
-                        {/* Visual Header / Banner - Generating a gradient pattern for now since no image provided */}
-                        <div className={`h-40 w-full bg-gradient-to-br ${index === 0 ? 'from-primary to-purple-700' : index === 1 ? 'from-success to-teal-700' : 'from-warning to-red-600'} relative p-6 flex flex-col justify-between`}>
-                            <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
+                        {/* Visual Header / Banner - Glassmorphic Blur Effect */}
+                        <div className="h-40 w-full relative p-6 flex flex-col justify-between overflow-hidden">
+                            {/* Animated Background Blobs */}
+                            <div className="absolute top-0 right-0 w-32 h-32 bg-primary/20 rounded-full blur-3xl -mr-16 -mt-16"></div>
+                            <div className="absolute bottom-0 left-0 w-32 h-32 bg-purple-500/10 rounded-full blur-3xl -ml-16 -mb-16"></div>
+
+                            {/* Glass Effect Overlay */}
+                            <div className="absolute inset-0 bg-white/5 backdrop-blur-sm"></div>
+
                             <div className="relative z-10 flex justify-between items-start">
-                                {project.featured && <Tag color="gold" className="border-none font-bold">Destaque</Tag>}
+                                {project.featured && <Tag color="gold" className="border-none font-bold shadow-lg">Destaque</Tag>}
                             </div>
                             <div className="relative z-10">
                                 <h3 className="text-xl font-bold text-white drop-shadow-md">{project.title}</h3>
