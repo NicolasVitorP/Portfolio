@@ -1,4 +1,4 @@
-# 🚀 Portfólio Profissional - Nicolas Vitor
+#   Portfólio Profissional - Nicolas Vitor
 
 <div align="center">
 
