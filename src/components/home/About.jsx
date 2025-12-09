@@ -1,12 +1,15 @@
 
 import React from 'react';
 import Section from '../common/Section';
-import { portfolioData } from '../../data/portfolioData';
+import { portfolioDAO } from '../../daos/PortfolioDAO';
 import { Button } from 'antd';
 import { DownloadOutlined } from '@ant-design/icons';
 import profileImg from '../../assets/profile.png';
 
 const About = () => {
+    const personalInfo = portfolioDAO.getProfile();
+    const languages = portfolioDAO.getLanguages();
+
     return (
         <Section id="about" title="Sobre Mim" subtitle="Minha jornada no desenvolvimento web">
             <div className="flex flex-col md:flex-row items-center gap-12 mt-8">
@@ -28,8 +31,18 @@ const About = () => {
                 {/* Content */}
                 <div className="w-full md:w-2/3">
                     <div className="space-y-6 text-gray-300 leading-relaxed text-lg">
-                        {portfolioData.personalInfo.bio.split('\n').map((paragraph, index) => (
+                        {personalInfo.bio.split('\n').map((paragraph, index) => (
                             <p key={index} className="opacity-90">{paragraph.trim()}</p>
+                        ))}
+                    </div>
+
+                    {/* Idiomas */}
+                    <div className="mt-8 grid grid-cols-2 gap-4 border-t border-white/5 pt-6">
+                        {languages.map((lang, index) => (
+                            <div key={index} className="flex flex-col">
+                                <span className="text-white font-semibold">{lang.language}</span>
+                                <span className="text-sm text-gray-400">{lang.level}</span>
+                            </div>
                         ))}
                     </div>
 

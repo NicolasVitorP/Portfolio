@@ -48,7 +48,7 @@ const Navbar = () => {
                     onClick={(e) => scrollToSection(e, '#hero')}
                     className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary-light to-purple-600"
                 >
-                    Nícolas<span className="text-white">.Dev</span>
+                    Nicolas<span className="text-white">.Dev</span>
                 </a>
 
                 {/* Desktop Menu */}

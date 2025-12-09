@@ -1,44 +1,44 @@
-
 // Icons are now loaded from skillicons.dev
 
 export const portfolioData = {
   personalInfo: {
-    name: "Nicolas Vitor Pereira Da Paz",
-    role: "Desenvolvedor Front-End",
-    tagline: "Transformando ideias em experiências digitais interativas e acessíveis.",
-    bio: `Desenvolvedor Front-End com foco em criar interfaces de usuário (UI) responsivas, acessíveis e de alto desempenho. Tenho como objetivo transformar ideias e desafios complexos em soluções visuais e funcionais, entregando experiências consistentes e fluidas em múltiplos dispositivos.
-    
-    Domínio técnico atual: HTML5, CSS3/SASS, JavaScript moderno (ES6+ e POO) e controle de versão com Git/GitHub. Sigo práticas de Clean Code, otimização de performance e princípios de acessibilidade.
-    
-    Em aprendizado avançado: React.js, integração com APIs REST, fundamentos de UX/UI e noções de GraphQL. Busco constantemente melhorar a arquitetura e a manutenção de código, garantindo escalabilidade e qualidade.`,
-    email: "nicolas.vitor@outlook.com", // Updated as requested
-    location: "Brasil",
+    name: "Nicolas Vitor",
+    role: "Desenvolvedor Front-End React",
+    tagline: "Transformo desafios complexos em interfaces intuitivas que unem performance, código limpo e acessibilidade.",
+    bio: `Desenvolvedor Front-End com formação técnica especializada e mentalidade de produto. Transformo desafios complexos em interfaces intuitivas que unem performance, código limpo e acessibilidade. Possuo domínio sólido em HTML5, CSS3, SASS, Tailwind CSS e JavaScript moderno (ES6+ e POO), com foco aplicado no ecossistema React (Hooks, Componentização, React Router). Sou movido por aprendizado contínuo acelerado, colaboração eficaz e uma mentalidade de dono, buscando minha primeira oportunidade para entregar valor tangível, evoluir com a equipe e contribuir para soluções reais em um ambiente que priorize qualidade e inovação.`,
+    email: "nicolas.vitor@outlook.com",
+    location: "Brasília - Disponibilidade Imediata (Remoto/Híbrido)",
     github: "https://github.com/NicolasVitorP",
-    linkedin: "", // Not provided
+    linkedin: "https://www.linkedin.com/in/nicolasvitorfrontend",
   },
-  skills: [
-    { name: "JavaScript", iconId: "js", color: "#F7DF1E" },
-    { name: "TypeScript", iconId: "ts", color: "#3178C6" },
-    { name: "React", iconId: "react", color: "#61DAFB" },
-    { name: "HTML5", iconId: "html", color: "#E34F26" },
-    { name: "CSS3", iconId: "css", color: "#1572B6" },
-    { name: "Tailwind CSS", iconId: "tailwind", color: "#06B6D4" },
-    { name: "Ant Design", iconId: "idea", color: "#0170FE" }, // Using idea (IntelliJ) as fallback or check if antd exists? Actually let's try 'antd' if supported, if not I'll stick to a safe one or keep component for this one? No, user wants consistent style. 'idea' is often used for generic, but maybe 'figma' or something else? Let's check if 'markdown' or something exists. Actually, looking at common lists, maybe just remove it or use 'react'? No. Let's try 'vercel' (already have). I will use 'vscode' as a placeholder for tool or just 'idea'. Wait, I'll use 'idea' or maybe I can skip it? No, better to have it. I'll use 'idea' or just 'vscode' style. Actually, let's use 'workers' or something. Let's stick with 'idea' for now or maybe 'rocket'.
-    // Better yet, I'll search online quickly if I can? No, I'll just use "react" or similar if unsure.
-    // Wait, let's just use "maven" or "gradle" no...
-    // I will use 'jenkins' no.
-    // Let's just use 'idea' (IntelliJ) looks cool, or just remove Ant Design if it breaks?
-    // Let's try 'unreal' no.
-    // I'll search for "skillicons.dev list" in my head... it supports many. 'antd' might not be there. 'materialui' is 'mui'. 'bootstrap' is 'bootstrap'.
-    // If I can't find 'antd', I'll use 'figma' as a design tool proxy or similar.
-    // Actually, I'll use 'react' for now or maybe duplicate, or remove it.
-    // Let's use 'github' style for now? No.
-    // Let's just leave it as 'idea' for now.
-    { name: "Node.js", iconId: "nodejs", color: "#339933" },
-    { name: "Git", iconId: "git", color: "#F05032" },
-    { name: "GitHub", iconId: "github", color: "#181717" },
-    { name: "Vercel", iconId: "vercel", color: "#000000" },
-  ],
+  skills: {
+    solid: [
+      { name: "React", iconId: "react", color: "#61DAFB" },
+      { name: "JavaScript (ES6+)", iconId: "js", color: "#F7DF1E" },
+      { name: "HTML5", iconId: "html", color: "#E34F26" },
+      { name: "CSS3", iconId: "css", color: "#1572B6" },
+      { name: "SASS", iconId: "sass", color: "#CC6699" },
+      { name: "Tailwind CSS", iconId: "tailwind", color: "#06B6D4" },
+      { name: "Git", iconId: "git", color: "#F05032" },
+      { name: "GitHub", iconId: "github", color: "#181717" },
+    ],
+    learning: [
+      { name: "Redux Toolkit", iconId: "redux", color: "#764ABC" },
+      { name: "Context API", iconId: "react", color: "#61DAFB" },
+      { name: "Next.js", iconId: "nextjs", color: "#000000" },
+      { name: "TypeScript", iconId: "ts", color: "#3178C6" },
+      { name: "Vite", iconId: "vite", color: "#646CFF" },
+      { name: "GraphQL", iconId: "graphql", color: "#E10098" },
+      { name: "Core Web Vitals", iconId: "google", color: "#4285F4" }, // Using google or generic for metrics
+    ],
+    soft: [
+      "Proatividade Estratégica",
+      "Colaboração e Comunicação Clara",
+      "Aprendizado Contínuo",
+      "Mentalidade de Dono",
+      "Atenção a Detalhes Críticos"
+    ]
+  },
   experience: [
     {
       company: "Gran Faculdade",
@@ -58,37 +58,44 @@ export const portfolioData = {
       company: "FIAP",
       role: "Nano Course — Lógica de Programação",
       period: "Concluído",
-      description: "Curso de introdução à lógica de programação, algoritmos e pensamento computacional.",
+      description: "Base sólida em algoritmos e pensamento computacional.",
+      type: "course"
+    },
+    {
+      company: "Outros",
+      role: "Certificação Learn to Program",
+      period: "Concluído",
+      description: "Fundamentos de programação.",
       type: "course"
     }
   ],
   projects: [
     {
       title: "Sistema de Monitoramento Climático (ClimaMaster)",
-      description: "Sistema modular para monitoramento climático com 3 CRUDs, relacionamentos complexos e relatórios. Utiliza ReactJS, Ant Design e persistência flexível (LocalStorage/MongoDB).",
-      technologies: ["React", "Ant Design", "JavaScript", "DAOs"],
+      description: "Sistema modular completo com 3 CRUDs interconectados, relacionamentos complexos e geração de relatórios. Arquitetura em camadas com React e Ant Design, utilizando padrão DAO para persistência (LocalStorage/MongoDB).",
+      technologies: ["React", "Ant Design", "JavaScript", "DAO", "MongoDB"],
       repoLink: "https://github.com/NicolasVitorP/Sistema-De-Monitoramento-Climatico-ClimaMaster-",
       featured: true
     },
     {
-      title: "Projeto JS Orientado a Objetos",
-      description: "Análise aprofundada de POO com JavaScript Vanilla. Arquitetura modular sem frameworks, focando em padrões de design e código escalável.",
-      technologies: ["JavaScript ES6+", "POO", "Clean Code"],
+      title: "Arquitetura Avançada de POO com JS Vanilla",
+      description: "Aplicação focada em princípios avançados de POO sem frameworks. Arquitetura totalmente desacoplada, aplicando SOLID e padrões como Module e Factory.",
+      technologies: ["JavaScript Vanilla", "POO", "Clean Code", "SOLID"],
       repoLink: "https://github.com/NicolasVitorP/BFD_JS_OO",
       featured: false
     },
     {
-      title: "Portfolio React + Vite",
-      description: "Frontend dinâmico e de alta performance. Demonstração de componentização, HMR e otimização de build com Vite.",
-      technologies: ["React", "Vite", "CSS3"],
+      title: "Portfólio de Alta Performance",
+      description: "Aplicação React otimizada para performance e SEO. Utiliza Vite para build otimizado, lazy loading e foco rigoroso nas métricas de Core Web Vitals.",
+      technologies: ["React", "Vite", "CSS3", "Performance", "SEO"],
       repoLink: "https://github.com/NicolasVitorP/vitejs-vite-ejwaxlas",
       featured: false
     }
   ],
   languages: [
     { language: "Português", level: "Nativo" },
-    { language: "Inglês", level: "Intermediário" },
-    { language: "Espanhol", level: "Básico/Intermediário" },
-    { language: "Alemão", level: "Básico" },
+    { language: "Inglês", level: "Nível Profissional" },
+    { language: "Espanhol", level: "Básico" },
+    { language: "Alemão", level: "Inicial" },
   ]
 };

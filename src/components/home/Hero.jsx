@@ -3,9 +3,11 @@ import React from 'react';
 import { Button } from 'antd';
 import { ArrowRightOutlined } from '@ant-design/icons';
 import { motion } from 'framer-motion';
-import { portfolioData } from '../../data/portfolioData';
+import { portfolioDAO } from '../../daos/PortfolioDAO';
 
 const Hero = () => {
+    const personalInfo = portfolioDAO.getProfile();
+
     return (
         <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
             {/* Background Glows */}
@@ -19,7 +21,7 @@ const Hero = () => {
                     transition={{ duration: 0.5 }}
                     className="inline-block py-1 px-3 rounded-full bg-white/5 border border-white/10 text-primary-light text-sm font-medium mb-6"
                 >
-                    👋 Olá, eu sou {portfolioData.personalInfo.name.split(' ')[0]}
+                    👋 Olá, eu sou {personalInfo.name}
                 </motion.div>
 
                 <motion.h1
@@ -40,7 +42,7 @@ const Hero = () => {
                     transition={{ duration: 0.5, delay: 0.4 }}
                     className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10"
                 >
-                    {portfolioData.personalInfo.tagline}
+                    {personalInfo.tagline}
                 </motion.p>
 
                 <motion.div
@@ -70,14 +72,7 @@ const Hero = () => {
                 </motion.div>
             </div>
 
-            {/* Scroll indicator */}
-            <motion.div
-                animate={{ y: [0, 10, 0] }}
-                transition={{ duration: 2, repeat: Infinity }}
-                className="absolute bottom-10 left-1/2 -translate-x-1/2 text-gray-500"
-            >
-                <span className="text-sm">Scroll Down</span>
-            </motion.div>
+
         </section>
     );
 };

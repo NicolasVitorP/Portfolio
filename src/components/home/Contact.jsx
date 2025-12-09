@@ -1,7 +1,7 @@
 
 import React from 'react';
 import Section from '../common/Section';
-import { portfolioData } from '../../data/portfolioData';
+import { portfolioDAO } from '../../daos/PortfolioDAO';
 import { Button, Input, Form, message } from 'antd';
 import { MailOutlined, SendOutlined } from '@ant-design/icons';
 
@@ -9,6 +9,7 @@ const { TextArea } = Input;
 
 const Contact = () => {
     const [form] = Form.useForm();
+    const personalInfo = portfolioDAO.getProfile();
 
     const onFinish = (values) => {
         message.success('Obrigado! Sua mensagem foi simulada com sucesso.');
@@ -23,17 +24,24 @@ const Contact = () => {
                 <div className="w-full md:w-1/3 space-y-8">
                     <div className="bg-[#121212] p-6 rounded-xl border border-white/5">
                         <h4 className="text-lg font-bold text-white mb-2">Email</h4>
-                        <a href={`mailto:${portfolioData.personalInfo.email}`} className="text-primary-light hover:text-primary transition-colors break-words">
-                            {portfolioData.personalInfo.email || "Enviar Email"}
+                        <a href={`mailto:${personalInfo.email}`} className="text-primary-light hover:text-primary transition-colors break-words">
+                            {personalInfo.email || "Enviar Email"}
                         </a>
                     </div>
 
                     <div className="bg-[#121212] p-6 rounded-xl border border-white/5">
                         <h4 className="text-lg font-bold text-white mb-2">Social</h4>
                         <div className="flex flex-col gap-2">
-                            <a href={portfolioData.personalInfo.github} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
-                                GitHub
-                            </a>
+                            {personalInfo.github && (
+                                <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                                    GitHub
+                                </a>
+                            )}
+                            {personalInfo.linkedin && (
+                                <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                                    LinkedIn
+                                </a>
+                            )}
                         </div>
                     </div>
                 </div>

@@ -1,15 +1,17 @@
 
 import React from 'react';
 import Section from '../common/Section';
-import { portfolioData } from '../../data/portfolioData';
+import { portfolioDAO } from '../../daos/PortfolioDAO';
 import { Button, Tag } from 'antd';
 import { GithubOutlined, StarOutlined } from '@ant-design/icons';
 
 const Projects = () => {
+    const projects = portfolioDAO.getProjects();
+
     return (
         <Section id="projects" title="Projetos" subtitle="Uma seleção dos meus melhores trabalhos">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
-                {portfolioData.projects.map((project, index) => (
+                {projects.map((project, index) => (
                     <div
                         key={index}
                         className="group bg-[#121212] rounded-xl overflow-hidden border border-white/5 hover:border-primary/50 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 flex flex-col"

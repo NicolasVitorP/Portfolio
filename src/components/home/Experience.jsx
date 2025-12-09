@@ -1,11 +1,13 @@
 
 import React from 'react';
 import Section from '../common/Section';
-import { portfolioData } from '../../data/portfolioData';
+import { portfolioDAO } from '../../daos/PortfolioDAO';
 import { Timeline, ConfigProvider } from 'antd';
 import { ClockCircleOutlined } from '@ant-design/icons';
 
 const Experience = () => {
+    const experience = portfolioDAO.getExperience();
+
     return (
         <Section id="experience" title="Experiência" subtitle="Minha trajetória acadêmica e profissional">
             <div className="max-w-4xl mx-auto mt-12 bg-[#121212] p-8 rounded-2xl border border-white/5">
@@ -21,7 +23,7 @@ const Experience = () => {
                 >
                     <Timeline
                         mode="left"
-                        items={portfolioData.experience.map((item, index) => ({
+                        items={experience.map((item, index) => ({
                             label: <span className="text-gray-400 text-sm">{item.period}</span>,
                             dot: <ClockCircleOutlined style={{ fontSize: '16px', color: '#1976D2' }} />,
                             children: (
