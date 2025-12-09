@@ -3,20 +3,32 @@ import Section from '../common/Section';
 import { portfolioDAO } from '../../daos/PortfolioDAO';
 import { Card } from 'antd';
 
-const SkillCard = ({ skill }) => (
-    <div
-        className="group relative bg-[#121212] border border-white/5 rounded-xl p-6 flex flex-col items-center justify-center gap-4 transition-all hover:-translate-y-2 hover:border-primary/30 hover:shadow-[0_0_20px_rgba(25,118,210,0.15)]"
-    >
-        <div className="text-4xl transition-transform group-hover:scale-110">
-            <img
-                src={`https://skillicons.dev/icons?i=${skill.iconId}&theme=dark`}
-                alt={skill.name}
-                className="w-12 h-12"
-            />
+const SkillCard = ({ skill }) => {
+    // Usar URLSearchParams para garantir codificação correta
+    const params = new URLSearchParams();
+    params.append('i', skill.iconId);
+    params.append('theme', 'dark');
+    const iconUrl = `https://skillicons.dev/icons?${params.toString()}`;
+
+    return (
+        <div
+            className="group relative bg-[#121212] border border-white/5 rounded-xl p-6 flex flex-col items-center justify-center gap-4 transition-all hover:-translate-y-2 hover:border-primary/30 hover:shadow-[0_0_20px_rgba(25,118,210,0.15)]"
+        >
+            <div className="text-4xl transition-transform group-hover:scale-110">
+                <img
+                    src={iconUrl}
+                    alt={skill.name}
+                    className="w-12 h-12"
+                    onError={(e) => {
+                        console.error('Erro ao carregar ícone:', iconUrl);
+                        e.target.style.display = 'none';
+                    }}
+                />
+            </div>
+            <h3 className="text-gray-300 font-medium group-hover:text-white text-center text-sm">{skill.name}</h3>
         </div>
-        <h3 className="text-gray-300 font-medium group-hover:text-white text-center text-sm">{skill.name}</h3>
-    </div>
-);
+    );
+};
 
 const Skills = () => {
     const skills = portfolioDAO.getSkills();
