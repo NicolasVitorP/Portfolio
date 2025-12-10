@@ -348,7 +348,6 @@ Este projeto foi desenvolvido utilizando **Antigravity by Google DeepMind**, dem
 - [Tailwind CSS](https://tailwindcss.com/) - Framework CSS
 - [Ant Design](https://ant.design/) - Componentes UI
 - [Framer Motion](https://www.framer.com/motion/) - Animações
-- [Skill Icons](https://skillicons.dev/) - Ícones de tecnologias
 - [Antigravity](https://deepmind.google/technologies/gemini/) - AI-Powered Development
 
 ---
