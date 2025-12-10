@@ -315,18 +315,6 @@ Para atualizar o conteúdo, edite este arquivo.
 
 ---
 
-## 🤝 Contribuindo
-
-Contribuições são bem-vindas! Sinta-se à vontade para:
-
-1. Fork o projeto
-2. Crie uma branch (`git checkout -b feature/NovaFeature`)
-3. Commit suas mudanças (`git commit -m 'Add: Nova feature'`)
-4. Push para a branch (`git push origin feature/NovaFeature`)
-5. Abra um Pull Request
-
----
-
 ## 👤 Autor
 
 **Nicolas Vitor**
