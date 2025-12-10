@@ -186,7 +186,7 @@ Seção de apresentação com animações e gradientes dinâmicos.
 Biografia profissional com foco em habilidades e diferenciais.
 
 ### Skills Section
-Exibição de habilidades técnicas com ícones do [skillicons.dev](https://skillicons.dev).
+Exibição de habilidades técnicas com ícones 
 
 ### Projects Section
 Showcase de projetos com cards interativos e links para repositórios.
