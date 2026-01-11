@@ -14,20 +14,80 @@ export const portfolioData = {
   },
   skills: {
     solid: [
-      { name: "React.js", iconId: "react", color: "#61DAFB" },
-      { name: "JavaScript (ES6+)", iconId: "js", color: "#F7DF1E" },
-      { name: "HTML5", iconId: "html", color: "#E34F26" },
-      { name: "CSS3", iconId: "css", color: "#1572B6" },
-      { name: "SASS", iconId: "sass", color: "#CC6699" },
-      { name: "Ant Design", iconId: "antd", color: "#0170FE" },
-      { name: "Git", iconId: "git", color: "#F05032" },
-      { name: "GitHub", iconId: "github", color: "#FFFFFF" },
+      {
+        name: "React.js",
+        iconId: "react",
+        color: "#61DAFB",
+        url: "https://react.dev/",
+      },
+      {
+        name: "JavaScript (ES6+)",
+        iconId: "js",
+        color: "#F7DF1E",
+        url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+      },
+      {
+        name: "HTML5",
+        iconId: "html",
+        color: "#E34F26",
+        url: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+      },
+      {
+        name: "CSS3",
+        iconId: "css",
+        color: "#1572B6",
+        url: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+      },
+      {
+        name: "SASS",
+        iconId: "sass",
+        color: "#CC6699",
+        url: "https://sass-lang.com/",
+      },
+      {
+        name: "Ant Design",
+        iconId: "antd",
+        color: "#0170FE",
+        url: "https://ant.design/",
+      },
+      {
+        name: "Git",
+        iconId: "git",
+        color: "#F05032",
+        url: "https://git-scm.com/",
+      },
+      {
+        name: "GitHub",
+        iconId: "github",
+        color: "#FFFFFF",
+        url: "https://github.com/",
+      },
     ],
     learning: [
-      { name: "Vite", iconId: "vite", color: "#FFFFFF" },
-      { name: "Vercel", iconId: "vercel", color: "#FFFFFF" },
-      { name: "Antigravity (IA)", iconId: "antigravity", color: "#FFFFFF" }, 
-      { name: "Leaflet", iconId: "leaflet", color: "#199900" },
+      {
+        name: "Vite",
+        iconId: "vite",
+        color: "#FFFFFF",
+        url: "https://vitejs.dev/",
+      },
+      {
+        name: "Vercel",
+        iconId: "vercel",
+        color: "#FFFFFF",
+        url: "https://vercel.com/",
+      },
+      {
+        name: "Antigravity (IA)",
+        iconId: "antigravity",
+        color: "#FFFFFF",
+        url: "https://antigravity.google/",
+      },
+      {
+        name: "Leaflet",
+        iconId: "leaflet",
+        color: "#199900",
+        url: "https://leafletjs.com/",
+      },
     ],
     concepts: [
       "Clean Code",
@@ -93,18 +153,20 @@ export const portfolioData = {
     },
     {
       title: "Arquitetura Avançada de POO com JS Vanilla",
-      description: "Aplicação focada em princípios avançados de POO sem frameworks. Arquitetura totalmente desacoplada, aplicando SOLID e padrões como Module e Factory.",
+      description:
+        "Aplicação focada em princípios avançados de POO sem frameworks. Arquitetura totalmente desacoplada, aplicando SOLID e padrões como Module e Factory.",
       technologies: ["JavaScript Vanilla", "POO", "Clean Code", "SOLID"],
       repoLink: "https://github.com/NicolasVitorP/BFD_JS_OO",
-      featured: false
+      featured: false,
     },
     {
       title: "Componentização com React",
-      description: "Aplicação React otimizada para performance e SEO. Utiliza Vite para build otimizado, lazy loading e foco rigoroso nas métricas de Core Web Vitals.",
+      description:
+        "Aplicação React otimizada para performance e SEO. Utiliza Vite para build otimizado, lazy loading e foco rigoroso nas métricas de Core Web Vitals.",
       technologies: ["React", "Vite", "SEO", "Performance"],
       repoLink: "https://github.com/NicolasVitorP/vitejs-vite-ejwaxlas",
-      featured: false
-    }
+      featured: false,
+    },
   ],
   languages: [
     { language: "Português", level: "Nativo" },

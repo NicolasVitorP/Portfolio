@@ -38,10 +38,8 @@ const SkillCard = ({ skill }) => {
     const IconContent = iconMap[skill.iconId] || SiReact;
     const isImage = typeof IconContent === 'string';
 
-    return (
-        <div
-            className="group relative bg-[#121212] border border-white/5 rounded-xl p-6 flex flex-col items-center justify-center gap-4 transition-all hover:-translate-y-2 hover:border-primary/30 hover:shadow-[0_0_20px_rgba(25,118,210,0.15)]"
-        >
+    const CardContent = (
+        <>
             <div className="text-4xl transition-transform group-hover:scale-110 flex items-center justify-center w-12 h-12">
                 {isImage ? (
                     <img 
@@ -57,6 +55,27 @@ const SkillCard = ({ skill }) => {
                 )}
             </div>
             <h3 className="text-gray-300 font-medium group-hover:text-white text-center text-sm">{skill.name}</h3>
+        </>
+    );
+
+    if (skill.url) {
+        return (
+            <a
+                href={skill.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative bg-[#121212] border border-white/5 rounded-xl p-6 flex flex-col items-center justify-center gap-4 transition-all hover:-translate-y-2 hover:border-primary/30 hover:shadow-[0_0_20px_rgba(25,118,210,0.15)] cursor-pointer"
+            >
+                {CardContent}
+            </a>
+        );
+    }
+
+    return (
+        <div
+            className="group relative bg-[#121212] border border-white/5 rounded-xl p-6 flex flex-col items-center justify-center gap-4 transition-all hover:-translate-y-2 hover:border-primary/30 hover:shadow-[0_0_20px_rgba(25,118,210,0.15)]"
+        >
+            {CardContent}
         </div>
     );
 };
