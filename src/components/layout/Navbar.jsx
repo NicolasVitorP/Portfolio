@@ -13,16 +13,7 @@ import {
 import { motion } from 'framer-motion';
 
 const Navbar = () => {
-    const [isScrolled, setIsScrolled] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            setIsScrolled(window.scrollY > 50);
-        };
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
 
     const navLinks = [
         { name: 'Sobre', href: '#about', icon: <UserOutlined /> },
@@ -46,11 +37,7 @@ const Navbar = () => {
             <motion.nav
                 initial={{ y: -100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
-                className={`max-w-5xl mx-auto pointer-events-auto transition-all duration-200 ease-out ${
-                    isScrolled 
-                    ? 'bg-black/60 backdrop-blur-xl py-3 px-6 rounded-2xl shadow-[0_8px_32px_rgba(0,0,0,0.5)]' 
-                    : 'bg-transparent py-4 px-6'
-                }`}
+                className="max-w-5xl mx-auto pointer-events-auto bg-black/40 backdrop-blur-xl py-3 px-6 rounded-2xl shadow-[0_8px_32px_rgba(0,0,0,0.3)] border border-white/5"
             >
                 <div className="flex justify-between items-center">
                     <a
