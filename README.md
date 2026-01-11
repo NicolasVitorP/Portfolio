@@ -1,361 +1,227 @@
-#   Portfólio Profissional - Nicolas Vitor
+# 🏛️ Portfólio Profissional
 
-<div align="center">
-
-![React](https://img.shields.io/badge/React-18.2.0-61DAFB?style=for-the-badge&logo=react&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-5.0.8-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/Tailwind-3.4.0-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
-![Ant Design](https://img.shields.io/badge/Ant_Design-5.12.0-0170FE?style=for-the-badge&logo=antdesign&logoColor=white)
-![AI-Powered](https://img.shields.io/badge/AI--Powered-Antigravity-FF6B6B?style=for-the-badge&logo=google&logoColor=white)
-
-**Portfólio de alta performance focado em UX/UI, acessibilidade e código limpo**
-
-[📱 Ver Demo](https://portfolio-ten-xi-lguafn88c4.vercel.app/) • [📧 Contato](mailto:nicolas.vitor@outlook.com) • [💼 LinkedIn](https://www.linkedin.com/in/nicolasvitorfrontend)
-
-</div>
+Aplicação FrontEnd desenvolvida em **ReactJS** para apresentação de **Perfil Profissional**, **Projetos de Software**, **Experiências Acadêmicas/Profissionais** e **Skills Técnicas**, implementando **Arquitetura Limpa**, **padrões de projeto (DAO/Models)** e **design de alta performance**.
 
 ---
 
-## 📋 Sobre o Projeto
+## 🌍 Deploy da Aplicação
 
-Portfólio profissional desenvolvido com as melhores práticas de desenvolvimento front-end moderno. Aplicação otimizada para performance, SEO e acessibilidade, demonstrando domínio técnico em React e design de interfaces premium.
-
-### ✨ Destaques
-
-- 🎨 **Design Premium**: Interface moderna com glassmorphism, gradientes e micro-animações
-- ⚡ **Alta Performance**: Lazy loading, code splitting e otimização de Core Web Vitals
-- ♿ **Acessibilidade**: Conformidade WCAG AA, navegação por teclado e ARIA labels
-- 📱 **Responsivo**: Mobile-first design com breakpoints otimizados
-- 🌙 **Dark Mode**: Tema escuro profissional com paleta de cores semântica
-- 🔍 **SEO Otimizado**: Meta tags, estrutura semântica e performance otimizada
+- 🔗 **FrontEnd (produção):**  
+  [https://portfolio-ten-xi-lguafn88c4.vercel.app/](https://portfolio-ten-xi-lguafn88c4.vercel.app/)
 
 ---
 
-## 🛠️ Stack Tecnológica
+## 💛 Visão Geral do Projeto
 
-### Core
-- **React 18.2** - Biblioteca UI com Hooks e componentização modular
-- **Vite 5.0** - Build tool ultrarrápido com HMR
-- **JavaScript ES6+** - Sintaxe moderna e clean code
-
-### Styling & UI
-- **Tailwind CSS 3.4** - Utility-first CSS framework
-- **Ant Design 5.12** - Biblioteca de componentes enterprise
-- **Framer Motion 10.16** - Animações fluidas e performáticas
-- **React Icons 4.12** - Biblioteca de ícones otimizada
-
-### Ferramentas & Otimização
-- **React Router DOM 6.20** - Roteamento SPA
-- **ESLint** - Linting e qualidade de código
-- **PostCSS & Autoprefixer** - Compatibilidade cross-browser
+- **Domínio:** Branding Profissional e Engenharia de Software
+- **Entidades principais:** Perfil, Projeto, Habilidade, Experiência
+- **Objetivo:** Desenvolver uma vitrine técnica pessoal que aplique os conceitos de desenvolvimento moderno, demonstrando domínio em frameworks UI, animações, e organização de código escalável.
+- **Persistência:** Data Object Mock / Centralized Data Store (Portfólio Data)
 
 ---
 
-## 📁 Estrutura do Projeto
+## 📜 Tecnologias Utilizadas
 
+### FrontEnd
+
+- **ReactJS 18.2.0** (Engine de UI)
+- **JavaScript (ES6+)** (Lógica e Computação)
+- **Ant Design (AntD) 5.12.0** (Componentes Enterprise)
+- **Tailwind CSS 3.4.0** (Design System e Utilidades)
+- **Framer Motion 10.16.4** (Animações e Micro-interações)
+- **React Router DOM 6.20.0** (Navegação SPA)
+- **Vite 5.0.8** (Build Tool e HMR)
+
+---
+
+# ✨ Funcionalidades Implementadas
+
+O projeto contempla uma aplicação robusta de portfólio com:
+
+- ✅ **Apresentação Hero**: Seção de impacto com gradientes dinâmicos e CTA.
+- ✅ **Showcase de Projetos**: Listagem interativa de repositórios e projetos destacados.
+- ✅ **Timeline de Experiência**: Visualização cronológica de formação e histórico.
+- ✅ **Grid de Habilidades**: Exibição categorizada de stacks técnicas.
+- ✅ **Formulário de Contato**: Interface para captação de leads e parcerias.
+- ✅ **Dark Mode Nativo**: Suporte profissional a temas escuros.
+- ✅ **Arquitetura DAO/Model**: Abstração total da camada de dados.
+- ✅ **Performance Otimizada**: Lazy loading de seções pesadas via React.lazy.
+
+---
+
+## 📋 Requisitos Funcionais (RF)
+
+### Perfil e Identidade
+
+- RF01 — Exibir informações básicas (Nome, Título, Localização)
+- RF02 — Disponibilizar links de redes sociais (LinkedIn, GitHub)
+- RF03 — Permitir download de currículo ou acesso a contato rápido
+
+### Portfólio de Projetos
+
+- RF04 — Listar projetos com título, descrição e tecnologias
+- RF05 — Classificar projetos como "Destaques"
+- RF06 — Redirecionar para repositórios externos via links seguros
+
+### Habilidades e Skills
+
+- RF07 — Listar habilidades técnicas com ícones representativos
+- RF08 — Organizar skills por categorias (Frontend, Ferramentas, etc)
+
+### Experiência e Formação
+
+- RF09 — Exibir timeline de formação acadêmica
+- RF10 — Detalhar cursos e certificações relevantes
+
+### Contato
+
+- RF11 — Capturar mensagens via formulário com validação de campos
+- RF12 — Oferecer feedback visual de sucesso/erro no envio
+
+---
+
+## ⚙️ Requisitos Não Funcionais (RNF)
+
+- RNF01 — Aplicação desenvolvida em ReactJS com Vite para performance máxima
+- RNF02 — Interface construída com Ant Design integrada ao Tailwind CSS
+- RNF03 — Código organizado seguindo padrões DAO (Data Access Object) e Models
+- RNF04 — Implementação de Lazy Loading para reduzir o First Contentful Paint (FCP)
+- RNF05 — Interface 100% responsiva (Mobile First)
+- RNF06 — Acessibilidade garantida (Aria Labels, Contraste, Semântica HTML)
+- RNF07 — Animações fluidas que não comprometem o Frame Rate
+- RNF08 — SEO otimizado com meta-tags e hierarquia de títulos correta
+
+---
+
+# 🧠 Modelagem dos Dados
+
+## 📌 Diagrama de Classes
+
+Abaixo, a representação da estrutura de dados que sustenta a aplicação:
+
+```mermaid
+classDiagram
+    class ProfileModel {
+        +String personalInfo
+        +Array skills
+        +Array experience
+        +Array projects
+    }
+    class ProjectModel {
+        +String title
+        +String description
+        +Array technologies
+        +String repoLink
+        +Boolean featured
+    }
+    class SkillModel {
+        +String name
+        +String iconId
+        +String color
+    }
+    class PortfolioDAO {
+        +getProfile()
+        +getSkills()
+        +getProjects()
+        +getExperience()
+    }
+    PortfolioDAO ..> ProfileModel
+    ProfileModel *-- ProjectModel
+    ProfileModel *-- SkillModel
 ```
-Portfolio-main/
-├── public/                    # Arquivos estáticos
-├── src/
-│   ├── assets/               # Imagens e recursos
-│   ├── components/           # Componentes React
-│   │   ├── common/          # Componentes reutilizáveis
-│   │   │   ├── Section.jsx
-│   │   │   └── SkeletonLoading.jsx
-│   │   ├── home/            # Seções da página inicial
-│   │   │   ├── Hero.jsx
-│   │   │   ├── About.jsx
-│   │   │   ├── Skills.jsx
-│   │   │   ├── Projects.jsx
-│   │   │   ├── Experience.jsx
-│   │   │   └── Contact.jsx
-│   │   └── layout/          # Layout components
-│   │       ├── Navbar.jsx
-│   │       └── Footer.jsx
-│   ├── data/                # Dados centralizados
-│   │   └── portfolioData.js
-│   ├── daos/                # Data Access Objects
-│   ├── models/              # Modelos de dados
-│   ├── pages/               # Páginas da aplicação
-│   │   └── Home.jsx
-│   ├── App.jsx              # Componente raiz
-│   ├── App.css              # Estilos globais
-│   ├── index.css            # Estilos base e Tailwind
-│   └── main.jsx             # Entry point
-├── .gitignore
-├── eslint.config.js         # Configuração ESLint
-├── index.html               # HTML template
-├── package.json             # Dependências
-├── postcss.config.js        # PostCSS config
-├── tailwind.config.js       # Tailwind config
-├── vite.config.js           # Vite config
-└── README.md
-```
 
 ---
 
-## 🚀 Começando
+## 📌 Entidades e Relacionamentos
 
-### Pré-requisitos
+### 1. Perfil (ProfileModel)
 
-- **Node.js** 16.x ou superior
-- **npm** ou **yarn**
+**Campos:**
 
-### Instalação
+- `personalInfo`: Objeto com nome, bio e redes.
+- `skills`: Lista de habilidades vinculadas.
+- `projects`: Lista de projetos associados ao perfil.
 
-1. **Clone o repositório**
+### 2. Projeto (ProjectModel)
+
+**Campos:**
+
+- `title`: Nome do projeto.
+- `technologies`: Array de strings/IDs de tecnologias utilizadas.
+- `featured`: Booleano para destacar o projeto na UI.
+
+### 3. Habilidade (SkillModel)
+
+**Campos:**
+
+- `name`: Nome da tecnologia.
+- `iconId`: Identificador para o sistema de ícones da UI.
+
+---
+
+## 📂 Estrutura do Projeto
+
 ```bash
-git clone https://github.com/NicolasVitorP/Portfolio.git
-cd Portfolio-main
+src/
+├── components/         # Componentes React
+│   ├── common/         # Componentes reutilizáveis (Section, Skeleton)
+│   ├── home/           # Seções da página (Hero, About, Projects)
+│   └── layout/         # Navbar, Footer e Wrappers
+├── daos/               # Abstração de Acesso a Dados
+│   └── PortfolioDAO.js
+├── models/             # Classes de Definição de Dados
+│   └── PortfolioModels.js
+├── data/               # Fonte da Verdade (Mock/JSON)
+│   └── portfolioData.js
+├── pages/              # Páginas da Aplicação (Home)
+├── App.jsx             # Estrutura de Rotas e Temas
+└── main.jsx            # Entry Point
 ```
 
-2. **Instale as dependências**
+---
+
+## ▶️ Execução Local
+
+### Instalação de Dependências
+
 ```bash
+# Instalação completa via NPM
 npm install
-# ou
-yarn install
 ```
 
-3. **Inicie o servidor de desenvolvimento**
-```bash
-npm run dev
-# ou
-yarn dev
-```
+### Comandos Disponíveis
 
-4. **Acesse no navegador**
-```
-http://localhost:5173
-```
-
-### Scripts Disponíveis
-
-| Comando | Descrição |
-|---------|-----------|
-| `npm run dev` | Inicia servidor de desenvolvimento |
-| `npm run build` | Cria build de produção otimizado |
-| `npm run preview` | Preview do build de produção |
-| `npm run lint` | Executa linting do código |
+| Comando           | Descrição                                                |
+| ----------------- | -------------------------------------------------------- |
+| `npm run dev`     | Inicia o servidor de desenvolvimento em `localhost:5173` |
+| `npm run build`   | Gera o pacote otimizado para produção na pasta `dist/`   |
+| `npm run preview` | Executa localmente o build de produção                   |
+| `npm run lint`    | Analisa o código em busca de erros e padrões             |
 
 ---
 
-## 🎨 Características Técnicas
+## 🎨 Principais Componentes Técnicos
 
-### Performance
+### 1. Sistema de Temas (Ant Design)
 
-- ⚡ **Lazy Loading**: Componentes carregados sob demanda com React.lazy()
-- 🔄 **Code Splitting**: Divisão automática de código pelo Vite
-- 🖼️ **Skeleton Loading**: Estados de carregamento para melhor UX
-- 📦 **Bundle Otimizado**: Build minificado e tree-shaking
+Configuração centralizada de tokens de design para garantir consistência visual entre componentes antd e customizados.
 
-### Acessibilidade (a11y)
+### 2. Engine de Animação (Framer Motion)
 
-- ♿ **WCAG AA**: Conformidade com diretrizes de acessibilidade
-- ⌨️ **Navegação por Teclado**: Suporte completo para navegação
-- 🏷️ **ARIA Labels**: Atributos semânticos para leitores de tela
-- 🎨 **Contraste**: Paleta de cores com contraste adequado
+Uso de `scroll-linked animations` e `layout transitions` para criar uma experiência imersiva sem degradar a performance.
 
-### SEO
+### 3. Camada DAO
 
-- 📝 **Meta Tags**: Descrições e títulos otimizados
-- 🏗️ **HTML Semântico**: Estrutura semântica adequada
-- 🔍 **Heading Hierarchy**: Hierarquia de títulos correta
-- ⚡ **Core Web Vitals**: Otimização para métricas do Google
-
-### Design System
-
-```javascript
-// Paleta de Cores Semântica
-{
-  primary: '#1976D2',      // Ações principais
-  success: '#388E3C',      // Feedback positivo
-  warning: '#F57C00',      // Alertas
-  error: '#D32F2F',        // Erros
-  background: '#121212',   // Fundo dark mode
-}
-```
+Toda a comunicação entre a UI e os dados passa pelo `PortfolioDAO`, permitindo que, no futuro, a fonte de dados possa ser alterada para uma API REST ou Firebase sem impactar os componentes visuais.
 
 ---
 
-## 📦 Componentes Principais
+## 👨‍💻 Autoria
 
-### Hero Section
-Seção de apresentação com animações e gradientes dinâmicos.
-
-### About Section
-Biografia profissional com foco em habilidades e diferenciais.
-
-### Skills Section
-Exibição de habilidades técnicas com ícones 
-
-### Projects Section
-Showcase de projetos com cards interativos e links para repositórios.
-
-### Experience Section
-Timeline de formação acadêmica e cursos.
-
-### Contact Section
-Formulário de contato com validação e feedback visual.
+- **Autor:** Nicolas Vitor Pereira Da Paz
+- **Stack:** React & Design Systems
+- **Especialidade:** Front-end
 
 ---
 
-## 🎯 Boas Práticas Implementadas
-
-### Código Limpo
-- ✅ Componentização modular e reutilizável
-- ✅ Separação de responsabilidades (SoC)
-- ✅ DRY (Don't Repeat Yourself)
-- ✅ Nomenclatura semântica e consistente
-
-### Performance
-- ✅ Lazy loading de componentes
-- ✅ Otimização de imagens
-- ✅ Minimização de re-renders
-- ✅ Code splitting automático
-
-### Manutenibilidade
-- ✅ Dados centralizados em `portfolioData.js`
-- ✅ Configurações externalizadas
-- ✅ Estrutura de pastas organizada
-- ✅ Comentários e documentação
-
----
-
-## 🌐 Deploy
-
-### Build de Produção
-
-```bash
-npm run build
-```
-
-O build otimizado será gerado na pasta `dist/`.
-
-### Plataformas Recomendadas
-
-- **Vercel** - Deploy automático com GitHub
-- **Netlify** - CI/CD integrado
-- **GitHub Pages** - Hospedagem gratuita
-- **Cloudflare Pages** - Performance global
-
-### Exemplo de Deploy (Vercel)
-
-```bash
-# Instale a CLI do Vercel
-npm i -g vercel
-
-# Deploy
-vercel
-```
-
----
-
-## 📊 Métricas de Performance
-
-| Métrica | Score |
-|---------|-------|
-| Performance | 95+ |
-| Accessibility | 100 |
-| Best Practices | 100 |
-| SEO | 100 |
-
-*Medido com Lighthouse no modo produção*
-
----
-
-## 🔧 Configuração Personalizada
-
-### Tailwind CSS
-
-Personalize cores, fontes e animações em [`tailwind.config.js`](./tailwind.config.js):
-
-```javascript
-theme: {
-  extend: {
-    colors: {
-      primary: {
-        DEFAULT: '#1976D2',
-        hover: '#1565C0',
-        light: '#42A5F5',
-      },
-    },
-  },
-}
-```
-
-### Ant Design
-
-Tema configurado em [`App.jsx`](./src/App.jsx):
-
-```javascript
-<ConfigProvider
-  theme={{
-    algorithm: theme.darkAlgorithm,
-    token: {
-      colorPrimary: '#1976D2',
-      fontFamily: "'Inter', sans-serif",
-    },
-  }}
->
-```
-
----
-
-## 📝 Dados do Portfólio
-
-Todos os dados são centralizados em [`portfolioData.js`](./src/data/portfolioData.js):
-
-- ✏️ Informações pessoais
-- 🛠️ Habilidades técnicas
-- 💼 Experiência profissional
-- 🚀 Projetos
-- 🌍 Idiomas
-
-Para atualizar o conteúdo, edite este arquivo.
-
----
-
-## 👤 Autor
-
-**Nicolas Vitor**
-
-- 💼 LinkedIn: [@nicolasvitorfrontend](https://www.linkedin.com/in/nicolasvitorfrontend)
-- 🐙 GitHub: [@NicolasVitorP](https://github.com/NicolasVitorP)
-- 📧 Email: nicolas.vitor@outlook.com
-- 📍 Localização: Brasília, DF - Brasil
-
----
-
-## 🤖 Desenvolvimento Moderno com IA
-
-Este projeto foi desenvolvido utilizando **Antigravity by Google DeepMind**, demonstrando proficiência no uso de ferramentas de IA modernas para desenvolvimento front-end de alta qualidade.
-
-### Por que isso é um diferencial?
-
-- 🚀 **Produtividade Acelerada**: Desenvolvimento ágil sem comprometer qualidade
-- 🎯 **Melhores Práticas**: Código seguindo padrões da indústria desde o início
-- 🔄 **Aprendizado Contínuo**: Estudo e compreensão profunda de cada implementação
-- 🧑‍💻 **Futuro da Engenharia**: Alinhamento com as práticas modernas de desenvolvimento
-
-> 💼 **Nota Profissional**: O uso de ferramentas de IA para desenvolvimento é uma habilidade valorizada na indústria tech moderna. Grandes empresas como Google, Microsoft e Meta incentivam seus engenheiros a utilizarem assistentes de IA para aumentar produtividade e qualidade de código.
-
----
-
-## 🙏 Agradecimentos
-
-- [React](https://react.dev/) - Biblioteca UI
-- [Vite](https://vitejs.dev/) - Build tool
-- [Tailwind CSS](https://tailwindcss.com/) - Framework CSS
-- [Ant Design](https://ant.design/) - Componentes UI
-- [Framer Motion](https://www.framer.com/motion/) - Animações
-- [Antigravity](https://deepmind.google/technologies/gemini/) - AI-Powered Development
-
----
-
-<div align="center">
-
-**Desenvolvido com ❤️ e ☕ por Nicolas Vitor**
-
-⭐ Se este projeto foi útil, considere dar uma estrela!
-
-</div>
+**Desenvolvido com ❤️, técnica e foco em resultados.**
