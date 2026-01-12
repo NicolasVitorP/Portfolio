@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from 'antd';
-import { ArrowRightOutlined } from '@ant-design/icons';
+import { ArrowRightOutlined, DownloadOutlined } from '@ant-design/icons';
 import { motion } from 'framer-motion';
 import { portfolioDAO } from '../../daos/PortfolioDAO';
 
@@ -69,6 +69,17 @@ const Hero = () => {
                             Entrar em Contato
                         </Button>
                     </a>
+                    {personalInfo.resumeUrl && (
+                        <a href={personalInfo.resumeUrl} download="Curriculo_Nicolas_Vitor.pdf" target="_blank" rel="noopener noreferrer">
+                            <Button
+                                size="large"
+                                icon={<DownloadOutlined />}
+                                className="h-12 px-8 text-base bg-white/5 border-white/10 text-white hover:text-primary-light hover:border-primary-light rounded-full hover:bg-white/10"
+                            >
+                                Download CV
+                            </Button>
+                        </a>
+                    )}
                 </motion.div>
             </div>
 

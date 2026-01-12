@@ -11,6 +11,7 @@ export const portfolioData = {
     location: "Brasília, DF",
     github: "https://github.com/NicolasVitorP",
     linkedin: "https://www.linkedin.com/in/nicolasvitorfrontend",
+    resumeUrl: "/curriculo.pdf", // Adicione seu arquivo PDF na pasta 'public' com este nome
   },
   skills: {
     solid: [
@@ -173,22 +174,6 @@ export const portfolioData = {
         "Projeto focado em performance e arquitetura estratégica utilizando React e Vite. Fluxo de trabalho otimizado via Antigravity (DeepMind) para aceleração de prototipagem e implementação de padrões modernos.",
       technologies: ["React", "Vite", "Antigravity", "Clean Code"],
       repoLink: "https://github.com/NicolasVitorP/Portfolio",
-      featured: true,
-    },
-    {
-      title: "Arquitetura Avançada de POO com JS Vanilla",
-      description:
-        "Aplicação focada em princípios avançados de POO sem frameworks. Arquitetura totalmente desacoplada, aplicando SOLID e padrões como Module e Factory.",
-      technologies: ["JavaScript Vanilla", "POO", "Clean Code", "SOLID"],
-      repoLink: "https://github.com/NicolasVitorP/BFD_JS_OO",
-      featured: false,
-    },
-    {
-      title: "Componentização com React",
-      description:
-        "Aplicação React otimizada para performance e SEO. Utiliza Vite para build otimizado, lazy loading e foco rigoroso nas métricas de Core Web Vitals.",
-      technologies: ["React", "Vite", "SEO", "Performance"],
-      repoLink: "https://github.com/NicolasVitorP/vitejs-vite-ejwaxlas",
       featured: false,
     },
   ],
