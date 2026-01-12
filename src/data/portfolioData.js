@@ -90,14 +90,38 @@ export const portfolioData = {
       },
     ],
     concepts: [
-      "Clean Code",
-      "APIs REST",
-      "Arquitetura DAO",
-      "UX/UI",
-      "Acessibilidade (WCAG)",
-      "SEO",
-      "Lógica de Programação",
-      "POO",
+      {
+        name: "Clean Code",
+        url: "https://www.freecodecamp.org/news/clean-coding-for-beginners/",
+      },
+      {
+        name: "APIs REST",
+        url: "https://www.redhat.com/pt-br/topics/api/what-is-a-rest-api",
+      },
+      {
+        name: "Arquitetura DAO",
+        url: "https://www.geeksforgeeks.org/data-access-object-pattern/",
+      },
+      {
+        name: "UX/UI",
+        url: "https://www.interaction-design.org/literature/topics/ux-design",
+      },
+      {
+        name: "Acessibilidade (WCAG)",
+        url: "https://www.w3.org/WAI/fundamentals/accessibility-intro/",
+      },
+      {
+        name: "SEO",
+        url: "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+      },
+      {
+        name: "Lógica de Programação",
+        url: "https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps/What_is_JavaScript",
+      },
+      {
+        name: "POO",
+        url: "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Advanced_JavaScript_objects/Object-oriented_programming",
+      },
     ],
   },
   experience: [

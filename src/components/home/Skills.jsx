@@ -128,11 +128,30 @@ const Skills = () => {
                         {skills.concepts ? "Conceitos e Competências" : "Habilidades Comportamentais"}
                     </h3>
                     <div className="flex flex-wrap gap-4">
-                        {(skills.concepts || skills.soft || []).map((skill, index) => (
-                            <div key={index} className="px-6 py-3 bg-white/5 border border-white/10 rounded-lg text-gray-300 hover:text-white hover:border-green-500/50 hover:bg-green-500/10 transition-all cursor-default text-sm md:text-base">
-                                {skill}
-                            </div>
-                        ))}
+                        {(skills.concepts || skills.soft || []).map((skill, index) => {
+                            const name = typeof skill === 'object' ? skill.name : skill;
+                            const url = typeof skill === 'object' ? skill.url : null;
+
+                            if (url) {
+                                return (
+                                    <a 
+                                        key={index} 
+                                        href={url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="px-6 py-3 bg-white/5 border border-white/10 rounded-lg text-gray-300 hover:text-white hover:border-green-500/50 hover:bg-green-500/10 transition-all cursor-pointer text-sm md:text-base decoration-none"
+                                    >
+                                        {name}
+                                    </a>
+                                );
+                            }
+
+                            return (
+                                <div key={index} className="px-6 py-3 bg-white/5 border border-white/10 rounded-lg text-gray-300 hover:text-white hover:border-green-500/50 hover:bg-green-500/10 transition-all cursor-default text-sm md:text-base">
+                                    {name}
+                                </div>
+                            );
+                        })}
                     </div>
                 </div>
             </div>
