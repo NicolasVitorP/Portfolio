@@ -1,6 +1,19 @@
-# 🏛️ Portfólio Profissional
+<div align="center">
+
+# Portfólio Profissional
+
+<br>
+
+<img src="https://github.com/user-attachments/assets/42985659-4b8b-44d0-9afe-4ff0084581aa" width="200" alt="Portfolio Icon">
+
+<br>
+<br>
 
 Aplicação FrontEnd desenvolvida em **ReactJS** para apresentação de **Perfil Profissional**, **Projetos de Software**, **Experiências Acadêmicas/Profissionais** e **Skills Técnicas**, implementando **Arquitetura Limpa**, **padrões de projeto (DAO/Models)** e **design de alta performance**.
+
+<br>
+
+</div>
 
 ---
 
