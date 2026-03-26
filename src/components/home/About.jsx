@@ -2,8 +2,6 @@
 import React from 'react';
 import Section from '../common/Section';
 import { portfolioDAO } from '../../daos/PortfolioDAO';
-import { Button } from 'antd';
-import { DownloadOutlined } from '@ant-design/icons';
 import profileImg from '../../assets/profile.png';
 
 const About = () => {
